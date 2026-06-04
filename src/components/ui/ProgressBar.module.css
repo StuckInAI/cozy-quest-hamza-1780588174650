@@ -1,0 +1,15 @@
+.wrap { width: 100%; }
+.label { display: flex; justify-content: space-between; font-size: 12px; font-weight: 700; color: var(--text-soft); margin-bottom: 6px; }
+.track {
+  height: 10px;
+  background: var(--bg-soft);
+  border-radius: 999px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+.fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--moss), var(--sun));
+  border-radius: 999px;
+  transition: width 0.6s ease;
+}

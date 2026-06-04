@@ -1,0 +1,19 @@
+.wrap {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: var(--s-4);
+  gap: var(--s-4);
+  flex-wrap: wrap;
+}
+.title {
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  gap: var(--s-2);
+}
+.emoji { font-size: 28px; }
+.sub { color: var(--text-soft); font-size: 14px; margin-top: 4px; }
+.action { display: flex; gap: var(--s-2); }

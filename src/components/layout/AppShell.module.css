@@ -1,0 +1,25 @@
+.shell {
+  display: flex;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 10% 0%, var(--rose-soft) 0%, transparent 40%),
+    radial-gradient(circle at 90% 20%, var(--sky-soft) 0%, transparent 45%),
+    radial-gradient(circle at 50% 100%, var(--moss-soft) 0%, transparent 50%),
+    var(--bg);
+}
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+.content {
+  padding: var(--s-5) var(--s-6) var(--s-7);
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+@media (max-width: 800px) {
+  .shell { flex-direction: column; }
+  .content { padding: var(--s-4); }
+}

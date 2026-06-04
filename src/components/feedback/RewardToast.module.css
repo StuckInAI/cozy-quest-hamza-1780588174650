@@ -1,0 +1,24 @@
+.wrap {
+  position: fixed;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+  pointer-events: auto;
+  animation: pop 0.4s ease;
+}
+.card {
+  display: flex;
+  align-items: center;
+  gap: var(--s-3);
+  background: var(--surface);
+  border: 2px solid var(--sun);
+  border-radius: var(--r-lg);
+  padding: var(--s-3) var(--s-5);
+  box-shadow: var(--shadow-lg);
+  cursor: pointer;
+  min-width: 280px;
+}
+.emoji { font-size: 32px; animation: wobble 1s ease-in-out infinite; }
+.title { font-weight: 800; color: var(--text); }
+.sub { font-size: 13px; color: var(--text-soft); margin-top: 2px; }

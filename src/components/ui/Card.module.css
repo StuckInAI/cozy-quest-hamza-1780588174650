@@ -1,0 +1,14 @@
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--r-lg);
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.card:hover { box-shadow: var(--shadow-md); }
+.padded { padding: var(--s-5); }
+.warm { background: var(--surface-warm); }
+.soft { background: var(--surface-soft); }
+.sky { background: var(--sky-soft); border-color: var(--sky); }
+.moss { background: var(--moss-soft); border-color: var(--moss); }
+.rose { background: var(--rose-soft); border-color: var(--rose); }

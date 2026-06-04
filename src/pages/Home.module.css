@@ -1,0 +1,44 @@
+.wrap { display: flex; flex-direction: column; gap: var(--s-5); }
+.hero { display: grid; grid-template-columns: 1.4fr 1fr; gap: var(--s-5); align-items: center; }
+@media (max-width: 800px) { .hero { grid-template-columns: 1fr; } }
+.heroLeft { display: flex; flex-direction: column; gap: var(--s-3); }
+.kicker { color: var(--moss-deep); font-weight: 800; text-transform: uppercase; letter-spacing: 1px; font-size: 12px; }
+.heroTitle { font-size: 28px; font-weight: 800; color: var(--text); line-height: 1.25; }
+.heroSub { color: var(--text-soft); }
+.heroProgress { margin-top: var(--s-2); max-width: 360px; }
+.heroCta { display: flex; gap: var(--s-3); flex-wrap: wrap; margin-top: var(--s-2); }
+.heroRight { display: flex; flex-direction: column; align-items: center; gap: var(--s-3); }
+.moodChip { background: var(--surface); border: 1px solid var(--border); padding: 4px 12px; border-radius: var(--r-pill); font-size: 12px; color: var(--text-soft); }
+.moodChip span { color: var(--moss-deep); font-weight: 800; text-transform: capitalize; }
+
+.grid { display: grid; grid-template-columns: 2fr 1fr; gap: var(--s-5); }
+@media (max-width: 900px) { .grid { grid-template-columns: 1fr; } }
+
+.list { display: flex; flex-direction: column; gap: var(--s-3); }
+.empty { color: var(--text-soft); padding: var(--s-4); text-align: center; background: var(--bg-soft); border-radius: var(--r-md); }
+
+.habits { display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--s-2); }
+.habit {
+  display: flex; align-items: center; gap: var(--s-2);
+  padding: 10px 12px;
+  background: var(--surface);
+  border-radius: var(--r-md);
+  border: 1px solid var(--border);
+  transition: transform 0.18s, background 0.18s;
+  text-align: left;
+}
+.habit:hover { background: var(--sun-soft); transform: translateY(-1px); }
+.habitEmoji { font-size: 20px; }
+.habitTitle { flex: 1; font-weight: 700; font-size: 13px; color: var(--text); }
+.habitStreak { font-size: 12px; color: var(--text-soft); font-weight: 700; }
+
+.miniStats { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--s-2); }
+.miniStat { background: var(--surface); border-radius: var(--r-md); padding: var(--s-3); text-align: center; }
+.miniBig { display: block; font-size: 24px; font-weight: 800; color: var(--moss-deep); }
+.miniLabel { font-size: 11px; color: var(--text-soft); font-weight: 700; }
+
+.areaList { display: flex; flex-direction: column; gap: var(--s-2); }
+.areaItem { display: flex; align-items: center; gap: var(--s-3); padding: var(--s-2); background: var(--surface); border-radius: var(--r-md); }
+.areaEmoji { font-size: 28px; }
+.areaName { font-weight: 800; color: var(--text); }
+.areaSub { font-size: 12px; color: var(--text-soft); }

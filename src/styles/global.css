@@ -1,0 +1,93 @@
+/* CSS Reset */
+*, *::before, *::after { box-sizing: border-box; }
+* { margin: 0; padding: 0; }
+html, body, #root { height: 100%; }
+body {
+  font-family: 'Quicksand', 'Nunito', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.5;
+}
+button { font: inherit; cursor: pointer; border: none; background: none; color: inherit; }
+ul, ol { list-style: none; }
+a { color: inherit; text-decoration: none; }
+img, svg { display: block; max-width: 100%; }
+input, textarea, select { font: inherit; color: inherit; }
+
+/* Design tokens — cozy palette */
+:root {
+  /* Backgrounds */
+  --bg: #fff7ee;
+  --bg-soft: #fdf1e0;
+  --surface: #ffffff;
+  --surface-soft: #fffaf2;
+  --surface-warm: #fff3e2;
+
+  /* Text */
+  --text: #4a3a2e;
+  --text-soft: #7a6a5b;
+  --text-muted: #b6a89a;
+
+  /* Accents — soft pastel */
+  --moss: #8bb46a;
+  --moss-soft: #c7e0ad;
+  --moss-deep: #5d8a44;
+
+  --rose: #e8a4a4;
+  --rose-soft: #f7d6d6;
+  --rose-deep: #c97a7a;
+
+  --sky: #a4c8e8;
+  --sky-soft: #d6e7f7;
+  --sky-deep: #6f9ec9;
+
+  --sun: #f5c46b;
+  --sun-soft: #fbe4b3;
+  --sun-deep: #d99e3a;
+
+  --lilac: #c9b3e0;
+  --lilac-soft: #e6daf2;
+
+  /* Borders / shadows */
+  --border: #f0e0c8;
+  --border-strong: #e5d2b3;
+  --shadow-sm: 0 2px 6px rgba(120, 85, 50, 0.08);
+  --shadow-md: 0 6px 18px rgba(120, 85, 50, 0.12);
+  --shadow-lg: 0 12px 32px rgba(120, 85, 50, 0.16);
+
+  /* Radii */
+  --r-sm: 10px;
+  --r-md: 16px;
+  --r-lg: 22px;
+  --r-xl: 28px;
+  --r-pill: 999px;
+
+  /* Spacing */
+  --s-1: 4px;
+  --s-2: 8px;
+  --s-3: 12px;
+  --s-4: 16px;
+  --s-5: 24px;
+  --s-6: 32px;
+  --s-7: 48px;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+@keyframes wobble {
+  0%, 100% { transform: rotate(-2deg); }
+  50% { transform: rotate(2deg); }
+}
+@keyframes pop {
+  0% { transform: scale(0.8); opacity: 0; }
+  60% { transform: scale(1.05); opacity: 1; }
+  100% { transform: scale(1); }
+}
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}

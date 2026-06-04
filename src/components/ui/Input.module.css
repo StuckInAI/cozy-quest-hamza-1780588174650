@@ -1,0 +1,12 @@
+.wrap { display: flex; flex-direction: column; gap: 6px; width: 100%; }
+.label { font-size: 13px; font-weight: 700; color: var(--text-soft); }
+.input {
+  padding: 10px 14px;
+  border-radius: var(--r-md);
+  border: 2px solid var(--border);
+  background: var(--surface-soft);
+  color: var(--text);
+  transition: border 0.18s, background 0.18s;
+  width: 100%;
+}
+.input:focus { outline: none; border-color: var(--moss); background: white; }
